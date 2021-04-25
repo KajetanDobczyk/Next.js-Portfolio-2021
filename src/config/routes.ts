@@ -1,10 +1,15 @@
-const routes = [
+type Route = {
+  name: string
+  path: string
+}
+
+const routes: Route[] = [
   {
     name: 'About',
     path: '/',
   },
   {
-    contact: 'Contact',
+    name: 'Contact',
     path: '/contact',
   },
 ]

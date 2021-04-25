@@ -1,3 +1,3 @@
-const Homepage = () => <>Homepage</>
+const Contact = () => <>Contact</>
 
-export default Homepage
+export default Contact

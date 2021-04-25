@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import routes from 'src/config/routes'
 
@@ -7,15 +8,23 @@ import * as S from './styles'
 
 const Header: React.FC = () => (
   <S.HeaderWrapper>
-    <S.HeaderMenu>
-      <li>
+    <S.Content>
+      <Image
+        src="/images/logo-lightbg.svg"
+        alt="Kajetan Dobczyk"
+        width={50}
+        height={50}
+      />
+      <S.Menu>
         {routes.map((route) => (
-          <Link href={route.path}>
-            <a>{route.name}</a>
-          </Link>
+          <li key={route.path}>
+            <Link href={route.path}>
+              <a>{route.name}</a>
+            </Link>
+          </li>
         ))}
-      </li>
-    </S.HeaderMenu>
+      </S.Menu>
+    </S.Content>
   </S.HeaderWrapper>
 )
 
