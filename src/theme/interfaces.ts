@@ -26,6 +26,10 @@ export type FontWeight =
 export type Font = {
   size: Record<FontSize, string>
   weight: Record<FontWeight, number>
+  family: {
+    sans: string
+    serif: string
+  }
 }
 
 export type TextTransform = 'capitalize' | 'uppercase' | 'lowercase' | 'none'

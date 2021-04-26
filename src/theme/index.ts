@@ -3,8 +3,12 @@ import { color, font } from './variables'
 const theme = {
   color,
   font,
-  dimensions: {
-    content: '1200px',
+  mixins: {
+    content: `
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    `,
   },
 }
 

@@ -29,8 +29,25 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold;
   font-family: Alegreya Sans;
+}
+
+p,
+ol,
+ul {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 6.25rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 ol,
@@ -46,4 +63,8 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+p > a:hover {
+  text-decoration: underline;
 }

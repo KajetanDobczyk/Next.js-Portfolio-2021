@@ -10,7 +10,7 @@ export const color: Color = {
     900: '#f5f5f5',
   },
   text: '#222222',
-  main: 'd0021b',
+  main: '#d0021b',
 }
 
 export const font: Font = {
@@ -31,6 +31,11 @@ export const font: Font = {
     semiBold: 600,
     bold: 700,
     black: 900,
+  },
+  family: {
+    sans:
+      'Alegreya Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+    serif: 'Alegreya',
   },
 }
 
