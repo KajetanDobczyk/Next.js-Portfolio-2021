@@ -1,8 +1,16 @@
-import { color, font } from './variables'
+import { color, font, media } from './variables'
 
 const theme = {
   color,
   font,
+  media,
+  dimensions: {
+    header: {
+      big: '90px',
+      medium: '80px',
+      small: '60px',
+    },
+  },
   mixins: {
     content: `
         max-width: 1200px;

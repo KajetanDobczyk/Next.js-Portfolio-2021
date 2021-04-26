@@ -1,16 +1,16 @@
 type Route = {
-  name: string
-  path: string
+  label: string
+  url: string
 }
 
 const routes: Route[] = [
   {
-    name: 'About',
-    path: '/',
+    label: 'About',
+    url: '/',
   },
   {
-    name: 'Contact',
-    path: '/contact',
+    label: 'Contact',
+    url: '/contact',
   },
 ]
 
