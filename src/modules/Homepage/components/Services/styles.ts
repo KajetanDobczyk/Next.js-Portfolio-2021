@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 import theme from 'src/theme'
 
-export const MyServicesWrapper = styled.div`
+export const ServicesWrapper = styled.div`
   position: relative;
   z-index: 0;
   padding: 150px 0;

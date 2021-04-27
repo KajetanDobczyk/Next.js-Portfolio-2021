@@ -18,8 +18,8 @@ const services = [
   },
 ]
 
-const MyServices = () => (
-  <S.MyServicesWrapper>
+const Services = () => (
+  <S.ServicesWrapper>
     <S.Content>
       <h2>My services</h2>
       <S.Services>
@@ -32,7 +32,7 @@ const MyServices = () => (
         ))}
       </S.Services>
     </S.Content>
-  </S.MyServicesWrapper>
+  </S.ServicesWrapper>
 )
 
-export default MyServices
+export default Services

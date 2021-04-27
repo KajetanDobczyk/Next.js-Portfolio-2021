@@ -1,10 +1,12 @@
 import Intro from './components/Intro'
-import MyServices from './components/MyServices'
+import Services from './components/Services'
+import Testimonials from './components/Testimonials'
 
 const Homepage = () => (
   <>
     <Intro />
-    <MyServices />
+    <Services />
+    <Testimonials />
   </>
 )
 

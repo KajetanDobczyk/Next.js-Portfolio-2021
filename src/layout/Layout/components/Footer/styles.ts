@@ -4,7 +4,7 @@ import theme from 'src/theme'
 
 export const FooterWrapper = styled.div`
   width: 100%;
-  background-color: ${theme.color.black};
+  background-color: ${theme.color.grey[100]};
   color: ${theme.color.white};
 `
 
