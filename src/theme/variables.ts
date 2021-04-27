@@ -17,7 +17,7 @@ export const font: Font = {
   size: {
     xxs: '0.6875rem',
     xs: '0.75rem',
-    sm: '0.8125rem',
+    sm: '0.875rem',
     base: '1rem',
     md: '1.25rem',
     xl: '1.375rem',

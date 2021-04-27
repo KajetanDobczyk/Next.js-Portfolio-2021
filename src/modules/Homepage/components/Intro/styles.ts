@@ -44,7 +44,7 @@ export const Info = styled.div`
 
   &:before {
     position: absolute;
-    top: 10px;
+    top: 13px;
     left: -200px;
     content: '';
     width: 120px;

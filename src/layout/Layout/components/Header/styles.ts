@@ -13,17 +13,18 @@ export const StyledSticky = styled(Sticky)`
 export const HeaderMainWrapper = styled.header`
   position: relative;
   z-index: 99999;
+  background-color: ${theme.color.white};
   transition: 0.25s ease-in-out;
 `
 
 export const HeaderWrapper = styled.div`
   ${theme.mixins.content}
+  padding: 0;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   height: ${theme.dimensions.header.big};
-  background-color: ${theme.color.white};
   transition: 0.25s ease-in-out;
 
   ${theme.media.lg} {
