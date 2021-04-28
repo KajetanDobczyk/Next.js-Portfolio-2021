@@ -1,3 +1,4 @@
+import { infoPoints } from './data'
 import * as S from './styles'
 
 const Intro = () => (
@@ -7,21 +8,12 @@ const Intro = () => (
         <span>U</span>ser <span>I</span>nterfaces coded right<span>.</span>
       </S.Title>
       <S.Info>
-        <div>
-          <h3>Grounded approach</h3>
-          <p>
-            Over 7 years of experience in frontend development, guaranteeing
-            lean process and fluent communication with other SMEs.
-          </p>
-        </div>
-        <div>
-          <h3>Artistic touch</h3>
-          <p>
-            I love to connect end users with beautiful designs and top edge
-            technology, therefore I treat every project like a unique piece of
-            art.
-          </p>
-        </div>
+        {infoPoints.map((infoPoint) => (
+          <div key={infoPoint.header}>
+            <h3>{infoPoint.header}</h3>
+            <p>{infoPoint.description}</p>
+          </div>
+        ))}
       </S.Info>
     </S.Content>
   </S.IntroWrapper>

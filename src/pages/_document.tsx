@@ -7,6 +7,7 @@ import Document, {
 } from 'next/document'
 
 import Fonts from 'src/theme/Fonts'
+import LibsStyles from 'src/theme/LibsStyles'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -20,6 +21,7 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <Fonts />
+          <LibsStyles />
         </Head>
         <body>
           <Main />

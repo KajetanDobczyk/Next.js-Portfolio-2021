@@ -25,6 +25,7 @@ export const MenuItem = styled.li<{ darkHeader?: boolean }>`
   }
 
   a {
+    font-family: ${theme.font.family.sans};
     padding: 5px 10px;
     white-space: nowrap;
     font-size: 15px;

@@ -1,10 +1,12 @@
 import styled from '@emotion/styled'
+import SlickSlider from 'react-slick'
 
 import theme from 'src/theme'
 
 export const TestimonialsWrapper = styled.div`
+  position: relative;
   background-color: ${theme.color.grey[100]};
-  padding: 150px 0;
+  padding: 180px 0;
 `
 
 export const Content = styled.div`
@@ -15,4 +17,132 @@ export const Title = styled.h2`
   width: 300px;
   margin: 0;
   color: ${theme.color.white};
+`
+
+const sliderOffset = '200px'
+
+export const TestimonialsSliderWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(50% + ${sliderOffset});
+  height: 100%;
+  overflow: hidden;
+`
+
+export const Slider = styled(SlickSlider)`
+  height: 100%;
+
+  .slick-list {
+    height: 100% !important;
+
+    .slick-track {
+      height: 100%;
+
+      .slick-slide {
+        > div {
+          height: 100%;
+        }
+        &:nth-of-type(2n) {
+          background-color: ${theme.color.main};
+        }
+        &:nth-of-type(2n + 1) {
+          background-color: ${theme.color.grey[100]};
+        }
+        &:nth-of-type(3n) {
+          background-color: ${theme.color.black};
+        }
+      }
+    }
+  }
+  .slick-arrow {
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    background-color: ${theme.color.white};
+    border-radius: 100%;
+    opacity: 0.25;
+    transition: opacity 0.2s;
+
+    &:before {
+      position: absolute;
+      top: 12px;
+      font-size: 40px;
+      opacity: 1;
+      color: ${theme.color.grey[100]};
+    }
+
+    &:hover {
+      opacity: 1;
+
+      &:before {
+      }
+    }
+
+    &.slick-prev {
+      left: -50px;
+
+      &:before {
+        content: '‹';
+        right: 12px;
+      }
+    }
+    &.slick-next {
+      right: calc(${sliderOffset} - 50px);
+
+      &:before {
+        content: '›';
+        left: 12px;
+        right: auto;
+      }
+    }
+  }
+`
+
+export const Slide = styled.div`
+  position: relative;
+  color: ${theme.color.white};
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+`
+
+export const SlideContent = styled.p`
+  line-height: 2;
+  font-size: ${theme.font.size.sm};
+`
+
+export const Author = styled.div`
+  padding-bottom: 20px;
+  display: flex;
+`
+
+export const AuthorImage = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 15px;
+`
+
+export const AuthorName = styled.h4`
+  margin: 3px 0 5px;
+`
+
+export const AuthorPosition = styled.a`
+  display: block;
+  font-size: ${theme.font.size.xs};
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+export const QuoteIcon = styled.img`
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
 `
