@@ -1,4 +1,4 @@
-import { ActivePage } from 'src/layout/Layout/components/Header/context'
+export type ActivePage = 'about' | 'contact'
 
 export type Route = {
   name: string

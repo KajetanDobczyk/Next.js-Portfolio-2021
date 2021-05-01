@@ -1,28 +1,23 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import RcDrawer from 'rc-drawer'
 import 'rc-drawer/assets/index.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { useContext } from 'src/config/context'
+
 import Menu from '../Menu'
 import * as S from './styles'
-import { HeaderContext } from '../../context'
 
-type MobileMenuProps = {
-  items: any
-}
-
-const MobileMenu: React.FC<MobileMenuProps> = ({ items, ...props }) => {
-  const { state, dispatch } = useContext(HeaderContext)
+const MobileMenu = () => {
+  const { state, dispatch } = useContext()
 
   const handleToggleDrawer = () => {
-    dispatch({
-      type: 'TOGGLE_DRAWER',
-    })
+    dispatch({ type: 'toggleDrawer' })
   }
 
   return (
-    <S.MobileMenuWrapper {...props}>
+    <S.MobileMenuWrapper>
       <div
         className="drawer__handler"
         style={{ display: 'inline-block' }}
@@ -60,7 +55,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ items, ...props }) => {
             </S.DrawerLogo>
             <S.DrawerClose onClick={handleToggleDrawer}>X</S.DrawerClose>
           </S.DrawerHead>
-          <Menu items={items} mobile />
+          <Menu mobile />
         </S.DrawerContent>
       </RcDrawer>
     </S.MobileMenuWrapper>
