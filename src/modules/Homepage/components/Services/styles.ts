@@ -31,6 +31,8 @@ export const Services = styled.div`
 `
 
 export const Service = styled.div`
+  flex: 1;
+
   &:not(:last-child) {
     margin-right: 70px;
   }

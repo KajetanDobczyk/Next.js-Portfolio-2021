@@ -1,20 +1,20 @@
 export const services = [
   {
-    title: 'React (JS) + TS',
+    title: 'Solid JS/TS + React foundation',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+      'Dynamic and interactive web apps based on JS/TS fundamentals, extended with React library or more complex production frameworks, like Next.js',
     image: '/images/react.svg',
   },
   {
     title: 'Best frontend practices',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+      'Usable and functional UX, responsive UI, solid security, error handling and reporting, proper testing, SEO and CWV optimization',
     image: '/images/best-practices.svg',
   },
   {
-    title: 'Old code refactor',
+    title: 'Proactiveness & effortless communication',
     content:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
-    image: '/images/refactor.svg',
+      'Highly proactive and goal-driven approach, pragmatic interpersonal communication – based on experience, reason, and intuition',
+    image: '/images/brainstorming.svg',
   },
 ]
