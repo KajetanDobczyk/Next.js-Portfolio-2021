@@ -8,7 +8,9 @@ const Services = () => (
       <S.Services>
         {services.map((service) => (
           <S.Service key={service.title}>
-            <S.ServiceImage />
+            <S.ServiceImageWrapper>
+              <img src={service.image} alt={service.title} />
+            </S.ServiceImageWrapper>
             <S.ServiceTitle>{service.title}</S.ServiceTitle>
             <S.ServiceDescription>{service.content}</S.ServiceDescription>
           </S.Service>

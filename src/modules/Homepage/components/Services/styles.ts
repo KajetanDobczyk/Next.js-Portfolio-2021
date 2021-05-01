@@ -36,11 +36,23 @@ export const Service = styled.div`
   }
 `
 
-export const ServiceImage = styled.div`
+export const ServiceImageWrapper = styled.div`
   position: relative;
-  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
   background-color: ${theme.color.grey[800]};
   margin-bottom: 45px;
+  transition: background-color 0.2s;
+
+  img {
+    position: relative;
+    display: block;
+    width: 50%;
+    z-index: 2;
+    transition: margin 0.2s;
+  }
 
   &:after {
     content: '';
@@ -53,10 +65,19 @@ export const ServiceImage = styled.div`
     opacity: 0;
     transition: opacity 0.2s, top 0.2s, left 0.2s;
   }
-  &:hover:after {
-    opacity: 0.8;
-    top: -10px;
-    left: 10px;
+  &:hover {
+    background-color: ${theme.color.grey[900]};
+
+    img {
+      margin-left: 15px;
+      margin-bottom: 15px;
+    }
+
+    &:after {
+      opacity: 0.8;
+      top: -10px;
+      left: 10px;
+    }
   }
 `
 
