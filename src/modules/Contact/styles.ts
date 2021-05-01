@@ -11,7 +11,7 @@ export const Content = styled.div`
   position: relative;
   z-index: 1;
   ${theme.mixins.content}
-  min-height: 880px;
+  min-height: 580px;
 `
 
 export const Title = styled.h2`
@@ -27,7 +27,7 @@ export const PhotoWrapper = styled.div`
   top: 100px;
   left: 100px;
   width: 570px;
-  height: 780px;
+  height: 480px;
   background-color: ${theme.color.grey[800]};
   z-index: 0;
 `

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import theme from 'src/theme'
 
 import * as S from './styles'
@@ -11,7 +13,14 @@ const Contact = () => (
   <S.ContactWrapper>
     <S.Content>
       <S.Title>Let's start working together!</S.Title>
-      <S.PhotoWrapper />
+      <S.PhotoWrapper>
+        <Image
+          src="/images/profile.jpeg"
+          alt="Kajetan Dobczyk"
+          layout="fill"
+          objectFit="cover"
+        />
+      </S.PhotoWrapper>
       <S.ContactDetails>
         <S.DetailsHeading>Message me</S.DetailsHeading>
         <a href="mailto:kajetan@dobczyk.com">kajetan@dobczyk.com</a>
