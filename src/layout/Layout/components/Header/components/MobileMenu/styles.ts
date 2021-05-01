@@ -71,25 +71,34 @@ export const DrawerContent = styled.div`
 
 export const DrawerHead = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 3px 0;
+  padding: 30px 30px 0;
 `
 
 export const DrawerLogo = styled.div`
-  max-width: 3rem;
-  padding-left: 30px;
-
   img {
-    max-width: 100%;
+    height: 50px;
   }
 `
 
 export const DrawerClose = styled.div`
-  height: 45px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 23px;
-  padding: 0 15px;
+  justify-content: flex-end;
+  align-items: top;
+  opacity: 0.25;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
 `

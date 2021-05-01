@@ -53,7 +53,9 @@ const MobileMenu = () => {
                 </a>
               </Link>
             </S.DrawerLogo>
-            <S.DrawerClose onClick={handleToggleDrawer}>X</S.DrawerClose>
+            <S.DrawerClose onClick={handleToggleDrawer}>
+              <img src="images/close.svg" />
+            </S.DrawerClose>
           </S.DrawerHead>
           <Menu mobile />
         </S.DrawerContent>
