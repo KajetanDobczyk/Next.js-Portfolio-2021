@@ -1,15 +1,20 @@
-type Route = {
-  label: string
+import { ActivePage } from 'src/layout/Layout/components/Header/context'
+
+export type Route = {
+  name: string
+  activeLabel: ActivePage
   url: string
 }
 
 const routes: Route[] = [
   {
-    label: 'About',
+    name: 'About',
+    activeLabel: 'about',
     url: '/',
   },
   {
-    label: 'Contact',
+    name: 'Contact',
+    activeLabel: 'contact',
     url: '/contact',
   },
 ]

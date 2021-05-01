@@ -3,11 +3,11 @@ import styled from '@emotion/styled'
 import theme from 'src/theme'
 
 export const IntroWrapper = styled.div`
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0 200px;
+  padding: 230px 0;
 `
 
 export const Content = styled.div`

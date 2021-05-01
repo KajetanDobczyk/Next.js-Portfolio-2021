@@ -15,10 +15,11 @@ type MobileMenuProps = {
 const MobileMenu: React.FC<MobileMenuProps> = ({ items, ...props }) => {
   const { state, dispatch } = useContext(HeaderContext)
 
-  const handleToggleDrawer = () =>
+  const handleToggleDrawer = () => {
     dispatch({
       type: 'TOGGLE_DRAWER',
     })
+  }
 
   return (
     <S.MobileMenuWrapper {...props}>

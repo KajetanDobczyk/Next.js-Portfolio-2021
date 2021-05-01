@@ -42,12 +42,9 @@ export const ContactDetails = styled.div`
 
   a {
     display: block;
-    color: ${theme.color.grey[600]};
+    ${theme.mixins.textContentLink}
+    color: ${theme.color.white};
     line-height: 2;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 `
 

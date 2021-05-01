@@ -2,7 +2,7 @@ import Layout from 'src/layout/Layout'
 import Homepage from 'src/modules/Homepage'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout activePage="about">
     <Homepage />
   </Layout>
 )

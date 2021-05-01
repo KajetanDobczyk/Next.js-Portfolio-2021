@@ -1,5 +1,7 @@
 import React, { useReducer } from 'react'
 
+export type ActivePage = 'about' | 'contact'
+
 interface State {
   isDrawerOpen: boolean
 }

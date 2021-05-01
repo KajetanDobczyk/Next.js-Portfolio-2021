@@ -19,7 +19,7 @@ export const HeaderMainWrapper = styled.header`
 
 export const HeaderWrapper = styled.div`
   ${theme.mixins.content}
-  padding: 0;
+  padding: 0 20px;
   display: flex;
   width: 100%;
   align-items: center;

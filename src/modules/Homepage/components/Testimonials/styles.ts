@@ -61,7 +61,7 @@ export const Slider = styled(SlickSlider)`
     height: 80px;
     background-color: ${theme.color.white};
     border-radius: 100%;
-    opacity: 0.25;
+    opacity: 0.5;
     transition: opacity 0.2s;
 
     &:before {

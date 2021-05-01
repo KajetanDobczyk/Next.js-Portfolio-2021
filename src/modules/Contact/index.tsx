@@ -23,8 +23,12 @@ const Contact = () => (
       </S.PhotoWrapper>
       <S.ContactDetails>
         <S.DetailsHeading>Message me</S.DetailsHeading>
-        <a href="mailto:kajetan@dobczyk.com">kajetan@dobczyk.com</a>
-        <a href="tel:+48507097222">(+48) 507 097 222</a>
+        <a href="mailto:kajetan@dobczyk.com">
+          <span data-content="kajetan@dobczyk.com">kajetan@dobczyk.com</span>
+        </a>
+        <a href="tel:+48507097222">
+          <span data-content="(+48) 507 097 222">(+48) 507 097 222</span>
+        </a>
         <S.SocialLinks>
           {socialLinks.map((link) => (
             <S.SocialIcon

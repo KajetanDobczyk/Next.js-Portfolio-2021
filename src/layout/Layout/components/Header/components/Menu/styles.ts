@@ -8,7 +8,8 @@ export const MenuWrapper = styled.ul`
   margin-left: auto;
 `
 
-export const MenuItem = styled.li<{ darkHeader?: boolean }>`
+export const MenuItem = styled.li<{ isActive: boolean }>(
+  ({ isActive }) => `
   margin: 0 20px;
   list-style: none;
 
@@ -25,25 +26,17 @@ export const MenuItem = styled.li<{ darkHeader?: boolean }>`
   }
 
   a {
+    ${theme.mixins.textContentLink}
     font-family: ${theme.font.family.sans};
     padding: 5px 10px;
     white-space: nowrap;
     font-size: 15px;
     line-height: 1;
     font-weight: 400;
-    color: ${(props) =>
-      props.darkHeader ? theme.color.white : theme.color.grey[500]};
-    transition: 0.15s ease-in-out;
 
-    &:hover {
-      color: ${(props) =>
-        props.darkHeader ? theme.color.grey[800] : theme.color.grey[200]};
-    }
-
-    &.active-link {
-      color: ${(props) =>
-        props.darkHeader ? theme.color.white : theme.color.grey[200]};
-      font-weight: 500;
+    > span {
+      text-decoration: ${isActive ? 'underline' : 'none'};
     }
   }
-`
+`,
+)

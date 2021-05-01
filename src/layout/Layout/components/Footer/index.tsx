@@ -8,7 +8,7 @@ const Footer: React.FC = () => (
       <p>
         Built on{' '}
         <a href="https://nextjs.org/" target="_blank" rel="noopener noreferrer">
-          Next.js
+          <span data-content="Next.js">Next.js</span>
         </a>
       </p>
       <p>© Kajetan Dobczyk {new Date().getFullYear()}</p>

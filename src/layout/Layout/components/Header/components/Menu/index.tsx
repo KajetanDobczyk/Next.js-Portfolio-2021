@@ -1,29 +1,26 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { Route } from 'src/config/routes'
+
+import { ActivePage } from '../../context'
 import * as S from './styles'
 
-type MenuItem = {
-  url: string
-  label: string
-  external?: boolean
-}
-
 type Props = {
-  items: MenuItem[]
-  dark?: boolean
+  routes: Route[]
   mobile?: boolean
+  activePage: ActivePage
 }
 
-const Menu: React.FC<Props> = ({ items, dark, mobile }) => (
+const Menu: React.FC<Props> = ({ routes, mobile, activePage }) => (
   <S.MenuWrapper className={`menu ${mobile ? 'mobile-menu' : ''}`}>
-    {items.map((item, index) => (
-      <S.MenuItem key={index} darkHeader={dark}>
-        {item.external ? (
-          <a href={item.url}>{item.label}</a>
-        ) : (
-          <Link href={item.url}>{item.label}</Link>
-        )}
+    {routes.map((route, index) => (
+      <S.MenuItem key={index} isActive={activePage === route.activeLabel}>
+        <Link href={route.url}>
+          <a>
+            <span data-content={route.name}>{route.name}</span>
+          </a>
+        </Link>
       </S.MenuItem>
     ))}
   </S.MenuWrapper>

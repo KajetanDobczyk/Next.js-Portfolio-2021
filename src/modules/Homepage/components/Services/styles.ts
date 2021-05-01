@@ -44,7 +44,7 @@ export const ServiceImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 300px;
-  background-color: ${theme.color.grey[800]};
+  background-color: ${theme.color.grey[100]};
   margin-bottom: 45px;
   transition: background-color 0.2s;
 
@@ -76,7 +76,7 @@ export const ServiceImageWrapper = styled.div`
     }
 
     &:after {
-      opacity: 0.8;
+      opacity: 1;
       top: -10px;
       left: 10px;
     }
