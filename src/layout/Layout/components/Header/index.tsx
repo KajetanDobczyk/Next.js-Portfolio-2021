@@ -10,7 +10,6 @@ const Header = () => (
   <S.StyledSticky enabled={true} innerZ={9999} activeClass="nav-sticky">
     <S.HeaderMainWrapper>
       <S.HeaderWrapper>
-        <MobileMenu />
         <S.Logo>
           <Link href="/">
             <a>
@@ -24,6 +23,7 @@ const Header = () => (
             </a>
           </Link>
         </S.Logo>
+        <MobileMenu />
         <S.MenuWrapper>
           <Menu />
         </S.MenuWrapper>

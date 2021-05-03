@@ -68,6 +68,22 @@ export const Service = styled.div`
       margin-bottom: 50px;
     }
   }
+
+  &:nth-of-type(2n) {
+    > div:first-of-type {
+      background-color: ${theme.color.main};
+    }
+  }
+  &:nth-of-type(2n + 1) {
+    > div:first-of-type {
+      background-color: ${theme.color.grey[100]};
+    }
+  }
+  &:nth-of-type(3n) {
+    > div:first-of-type {
+      background-color: ${theme.color.black};
+    }
+  }
 `
 
 export const ServiceImageWrapper = styled.div`
@@ -76,7 +92,6 @@ export const ServiceImageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   height: 300px;
-  background-color: ${theme.color.grey[100]};
   margin-bottom: 45px;
   transition: background-color 0.2s;
 
@@ -101,32 +116,6 @@ export const ServiceImageWrapper = styled.div`
     ${theme.media.md} {
       width: auto;
       height: 60%;
-    }
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: ${theme.color.main};
-    opacity: 0;
-    transition: opacity 0.2s, top 0.2s, left 0.2s;
-  }
-  &:hover {
-    background-color: ${theme.color.grey[900]};
-
-    img {
-      margin-left: 15px;
-      margin-bottom: 15px;
-    }
-
-    &:after {
-      opacity: 1;
-      top: -10px;
-      left: 10px;
     }
   }
 `
