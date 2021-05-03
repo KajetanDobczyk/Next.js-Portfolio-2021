@@ -1,40 +1,13 @@
 const Fonts = () => (
   <>
     <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossOrigin="true"
-    />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;700&display=swap"
-    />
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap"
-    />
-    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;700&display=swap"
-      media="print"
     />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap"
-      media="print"
     />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Alegreya:wght@300;400;700&display=swap"
-      />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap"
-      />
-    </noscript>
   </>
 )
 
