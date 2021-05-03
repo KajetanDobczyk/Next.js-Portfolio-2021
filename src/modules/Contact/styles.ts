@@ -5,6 +5,10 @@ import theme from 'src/theme'
 
 export const ContactWrapper = styled.div`
   padding: 150px 0;
+
+  ${theme.media.md} {
+    padding: 100px 0;
+  }
 `
 
 export const Content = styled.div`
@@ -20,6 +24,11 @@ export const Title = styled.h2`
   width: 300px;
   margin: 0;
   z-index: 1;
+
+  ${theme.media.md} {
+    text-align: center;
+    width: 100%;
+  }
 `
 
 export const PhotoWrapper = styled.div`
@@ -30,6 +39,17 @@ export const PhotoWrapper = styled.div`
   height: 480px;
   background-color: ${theme.color.grey[800]};
   z-index: 0;
+
+  ${theme.media.md} {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin-top: 50px;
+  }
 `
 
 export const ContactDetails = styled.div`
@@ -39,6 +59,22 @@ export const ContactDetails = styled.div`
   width: 385px;
   padding: 50px;
   background-color: ${theme.color.grey[100]};
+
+  ${theme.media.xl} {
+    top: 350px;
+  }
+  ${theme.media.lg} {
+    top: 450px;
+    right: 70px;
+  }
+  ${theme.media.md} {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
 
   a {
     display: block;
