@@ -36,6 +36,7 @@ function reducer(state: State, action: Action) {
       return {
         ...state,
         activePage: action.payload,
+        isDrawerOpen: false,
       }
     }
     default: {

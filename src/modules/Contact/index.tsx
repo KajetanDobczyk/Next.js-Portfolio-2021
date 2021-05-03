@@ -32,6 +32,7 @@ const Contact = () => (
         <S.SocialLinks>
           {socialLinks.map((link) => (
             <S.SocialIcon
+              key={link}
               url={link}
               target="_blank"
               bgColor={theme.color.grey[100]}

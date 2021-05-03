@@ -8,12 +8,14 @@ export const StyledSticky = styled(Sticky)`
     top: 0 !important;
     transition: top 0.5s ease-in-out;
   }
+  &.nav-sticky .sticky-inner-wrapper {
+    background-color: ${theme.color.white};
+  }
 `
 
 export const HeaderMainWrapper = styled.header`
   position: relative;
   z-index: 99999;
-  background-color: ${theme.color.white};
   transition: 0.25s ease-in-out;
 `
 

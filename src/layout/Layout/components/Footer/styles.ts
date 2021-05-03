@@ -6,12 +6,11 @@ export const FooterWrapper = styled.div`
   width: 100%;
   background-color: ${theme.color.grey[100]};
   color: ${theme.color.white};
+  padding: 50px 0;
 `
 
 export const Content = styled.div`
   ${theme.mixins.content}
-  padding-top: 80px;
-  padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;

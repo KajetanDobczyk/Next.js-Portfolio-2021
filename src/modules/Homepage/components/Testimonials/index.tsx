@@ -9,7 +9,7 @@ const Testimonials = () => (
     <S.TestimonialsSliderWrapper>
       <S.Slider {...sliderSettings}>
         {testimonials.map((testimonial) => (
-          <S.Slide>
+          <S.Slide key={testimonial.link}>
             <S.SlideContent>"{testimonial.content}"</S.SlideContent>
             <S.Author>
               <S.AuthorImage src={testimonial.image} alt={testimonial.author} />

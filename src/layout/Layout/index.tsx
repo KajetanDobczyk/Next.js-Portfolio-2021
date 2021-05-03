@@ -16,7 +16,6 @@ const Layout: NextPage<Props> = ({ children, activePage }) => {
 
   useEffect(() => {
     dispatch({ type: 'setActivePage', payload: activePage })
-    dispatch({ type: 'toggleDrawer' })
   }, [dispatch])
 
   return (
