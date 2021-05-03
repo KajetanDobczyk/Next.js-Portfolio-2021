@@ -11,7 +11,7 @@ export const FooterWrapper = styled.div`
 
 export const Content = styled.div`
   ${theme.mixins.content}
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 

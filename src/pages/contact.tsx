@@ -2,7 +2,7 @@ import Layout from 'src/layout/Layout'
 import Contact from 'src/modules/Contact'
 
 const ContactPage = () => (
-  <Layout activePage="contact">
+  <Layout activePage="contact" title="Contact">
     <Contact />
   </Layout>
 )

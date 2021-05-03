@@ -20,6 +20,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <link rel="shortcut icon" href="/images/favicon.png" />
           <Fonts />
           <LibsStyles />
         </Head>
