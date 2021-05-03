@@ -3,23 +3,39 @@ import SlickSlider from 'react-slick'
 
 import theme from 'src/theme'
 
+const sliderOffset = '200px'
+
 export const TestimonialsWrapper = styled.div`
   position: relative;
   background-color: ${theme.color.grey[100]};
   padding: 180px 0;
+
+  ${theme.media.lg} {
+    padding: 150px 0 0;
+  }
+  ${theme.media.md} {
+    padding: 100px 0 0;
+  }
 `
 
 export const Content = styled.div`
   ${theme.mixins.content}
+
+  ${theme.media.lg} {
+    align-items: center;
+  }
 `
 
 export const Title = styled.h2`
   width: 300px;
   margin: 0;
   color: ${theme.color.white};
-`
 
-const sliderOffset = '200px'
+  ${theme.media.lg} {
+    width: auto;
+    margin-bottom: 50px;
+  }
+`
 
 export const TestimonialsSliderWrapper = styled.div`
   position: absolute;
@@ -28,10 +44,27 @@ export const TestimonialsSliderWrapper = styled.div`
   width: calc(50% + ${sliderOffset});
   height: 100%;
   overflow: hidden;
+
+  ${theme.media.xl} {
+    width: calc(70% + ${sliderOffset});
+    left: 30%;
+  }
+  ${theme.media.lg} {
+    position: relative;
+    width: 100%;
+    left: 0;
+  }
 `
 
 export const Slider = styled(SlickSlider)`
   height: 100%;
+
+  ${theme.media.lg} {
+    height: 500px;
+  }
+  ${theme.media.md} {
+    height: 400px;
+  }
 
   .slick-list {
     height: 100% !important;
@@ -45,12 +78,24 @@ export const Slider = styled(SlickSlider)`
         }
         &:nth-of-type(2n) {
           background-color: ${theme.color.main};
+
+          ${theme.media.sm} {
+            background-color: ${theme.color.grey[100]};
+          }
         }
         &:nth-of-type(2n + 1) {
           background-color: ${theme.color.grey[100]};
+
+          ${theme.media.sm} {
+            background-color: ${theme.color.grey[100]};
+          }
         }
         &:nth-of-type(3n) {
           background-color: ${theme.color.black};
+
+          ${theme.media.sm} {
+            background-color: ${theme.color.grey[100]};
+          }
         }
       }
     }
@@ -89,6 +134,10 @@ export const Slider = styled(SlickSlider)`
     }
     &.slick-next {
       right: calc(${sliderOffset} - 50px);
+
+      ${theme.media.lg} {
+        right: -50px;
+      }
 
       &:before {
         content: '›';

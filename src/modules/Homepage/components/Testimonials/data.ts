@@ -1,3 +1,6 @@
+import { Settings } from 'react-slick'
+import theme from 'src/theme'
+
 export const testimonials = [
   {
     image: '/images/clients/erica.jpeg',
@@ -33,9 +36,23 @@ export const testimonials = [
   },
 ]
 
-export const sliderSettings = {
+export const sliderSettings: Settings = {
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
   adaptiveHeight: true,
+  responsive: [
+    {
+      breakpoint: theme.breakpoints.lg,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: theme.breakpoints.sm,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 }

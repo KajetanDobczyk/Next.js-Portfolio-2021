@@ -42,11 +42,29 @@ export const font: Font = {
 const mediaQ = (size: number): string =>
   `@media only screen and (max-width: ${size}px)`
 
-export const media = {
-  xs: mediaQ(380),
-  sm: mediaQ(576),
-  md: mediaQ(768),
-  lg: mediaQ(992),
-  xl: mediaQ(1200),
-  xxl: mediaQ(1440),
+type Breakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+
+export const breakpoints: Record<Breakpoint, number> = {
+  xs: 380,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200,
+  xxl: 1440,
+}
+
+export const media = Object.keys(breakpoints).reduce(
+  (acc, breakpoint) => ({
+    ...acc,
+    [breakpoint]: mediaQ(breakpoints[breakpoint as Breakpoint]),
+  }),
+  {} as Record<Breakpoint, string>,
+)
+
+export const dimensions = {
+  header: {
+    big: '90px',
+    medium: '80px',
+    small: '60px',
+  },
 }

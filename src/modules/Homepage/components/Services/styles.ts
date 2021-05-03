@@ -32,6 +32,12 @@ export const Content = styled.div`
   ${theme.mixins.content}
 `
 
+export const Title = styled.h2`
+  ${theme.media.lg} {
+    text-align: center;
+  }
+`
+
 export const Services = styled.div`
   display: flex;
   justify-content: space-between;
@@ -129,7 +135,7 @@ export const Description = styled.div`
   padding-left: 30px;
 
   ${theme.media.lg} {
-    padding-left: 40px;
+    padding-left: 0;
   }
   ${theme.media.md} {
     padding-left: 30px;

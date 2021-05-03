@@ -4,7 +4,7 @@ import * as S from './styles'
 const Services = () => (
   <S.ServicesWrapper>
     <S.Content>
-      <h2>My services</h2>
+      <S.Title>My services</S.Title>
       <S.Services>
         {services.map((service) => (
           <S.Service key={service.title}>
