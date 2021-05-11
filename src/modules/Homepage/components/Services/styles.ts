@@ -6,23 +6,10 @@ export const ServicesWrapper = styled.div`
   position: relative;
   z-index: 0;
   padding: 150px 0;
+  background-color: ${theme.color.grey[900]};
 
   ${theme.media.md} {
     padding: 100px 0;
-  }
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background-color: ${theme.color.grey[900]};
-
-    ${theme.media.md} {
-      height: 100%;
-    }
   }
 `
 
@@ -33,6 +20,8 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h2`
+  margin-bottom: 3rem;
+
   ${theme.media.lg} {
     text-align: center;
   }
@@ -68,22 +57,6 @@ export const Service = styled.div`
       margin-bottom: 50px;
     }
   }
-
-  &:nth-of-type(2n) {
-    > div:first-of-type {
-      background-color: ${theme.color.main};
-    }
-  }
-  &:nth-of-type(2n + 1) {
-    > div:first-of-type {
-      background-color: ${theme.color.grey[100]};
-    }
-  }
-  &:nth-of-type(3n) {
-    > div:first-of-type {
-      background-color: ${theme.color.black};
-    }
-  }
 `
 
 export const ServiceImageWrapper = styled.div`
@@ -91,8 +64,8 @@ export const ServiceImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px;
-  margin-bottom: 45px;
+  height: 250px;
+  margin-bottom: 15px;
   transition: background-color 0.2s;
 
   ${theme.media.md} {
@@ -109,7 +82,7 @@ export const ServiceImageWrapper = styled.div`
   img {
     position: relative;
     display: block;
-    width: 50%;
+    width: 40%;
     z-index: 2;
     transition: margin 0.2s;
 

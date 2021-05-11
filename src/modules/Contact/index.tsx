@@ -22,7 +22,7 @@ const Contact = () => (
         />
       </S.PhotoWrapper>
       <S.ContactDetails>
-        <S.DetailsHeading>Message me</S.DetailsHeading>
+        <S.DetailsHeading>Contact me</S.DetailsHeading>
         <a href="mailto:kajetan@dobczyk.com">
           <span data-content="kajetan@dobczyk.com">kajetan@dobczyk.com</span>
         </a>

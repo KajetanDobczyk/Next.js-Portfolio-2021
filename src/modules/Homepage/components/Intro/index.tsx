@@ -16,6 +16,7 @@ const Intro = () => (
         ))}
       </S.Info>
     </S.Content>
+    <S.ScrollIcon />
   </S.IntroWrapper>
 )
 
