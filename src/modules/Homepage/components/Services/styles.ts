@@ -37,16 +37,19 @@ export const Services = styled.div`
 `
 
 export const Service = styled.div`
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
 
   ${theme.media.md} {
     flex-direction: row;
+    align-items: center;
   }
 
   ${theme.media.sm} {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   &:not(:last-child) {
@@ -71,12 +74,15 @@ export const ServiceImageWrapper = styled.div`
   ${theme.media.md} {
     margin-bottom: 0;
     height: 200px;
-    width: 100%;
-    min-width: 300px;
+    width: 200px;
   }
   ${theme.media.sm} {
-    height: 30vw;
-    min-width: 0;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    opacity: 0.1;
   }
 
   img {
@@ -100,8 +106,6 @@ export const Description = styled.div`
     padding-left: 0;
   }
   ${theme.media.md} {
-    padding-left: 30px;
-    margin-top: 25px;
     max-width: 350px;
   }
   ${theme.media.sm} {
@@ -118,10 +122,10 @@ export const ServiceTitle = styled.h4`
   ${theme.media.xl} {
     height: 50px;
     margin-bottom: 10px;
-    padding-left: 40px;
   }
   ${theme.media.md} {
     height: auto;
+    padding-left: 0;
   }
 
   &:before {
@@ -136,7 +140,10 @@ export const ServiceTitle = styled.h4`
     ${theme.media.lg} {
       width: 30px;
       top: 8px;
-      left: 0;
+      left: -10px;
+    }
+    ${theme.media.md} {
+      display: none;
     }
   }
 `
@@ -145,4 +152,9 @@ export const ServiceDescription = styled.p`
   font-size: ${theme.font.size.sm};
   color: ${theme.color.grey[600]};
   line-height: 2;
+  padding-left: 30px;
+
+  ${theme.media.md} {
+    padding-left: 0;
+  }
 `

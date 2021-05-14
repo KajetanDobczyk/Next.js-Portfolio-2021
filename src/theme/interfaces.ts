@@ -31,18 +31,3 @@ export type Font = {
     serif: string
   }
 }
-
-export type TextTransform = 'capitalize' | 'uppercase' | 'lowercase' | 'none'
-
-export type ThemeName = 'siemens' | 'ispot'
-
-export const isThemeName = (
-  theme: string | undefined | null,
-): theme is ThemeName =>
-  (theme as ThemeName) === 'siemens' || (theme as ThemeName) === 'ispot'
-
-export interface ITheme {
-  name: ThemeName
-  logoUrl: string
-  color: Color
-}
