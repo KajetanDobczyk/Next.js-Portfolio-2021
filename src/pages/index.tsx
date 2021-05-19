@@ -1,9 +1,13 @@
 import Layout from 'src/layout/Layout'
-import Homepage from 'src/modules/Homepage'
+import Contact from 'src/modules/Contact/containers/Contact'
+import About from 'src/modules/Homepage/containers/About'
+import Intro from 'src/modules/Homepage/containers/Intro'
 
 const IndexPage = () => (
   <Layout activePage="about" title="About me">
-    <Homepage />
+    <Intro />
+    <About />
+    <Contact />
   </Layout>
 )
 

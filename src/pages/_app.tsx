@@ -11,5 +11,4 @@ const App = ({ Component, pageProps }: AppProps) => (
     <Component {...pageProps} />
   </ContextProvider>
 )
-
 export default App

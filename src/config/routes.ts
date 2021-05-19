@@ -1,4 +1,4 @@
-export type ActivePage = 'about' | 'contact'
+export type ActivePage = 'about' | 'blog' | 'contact'
 
 export type Route = {
   name: string
@@ -11,6 +11,11 @@ const routes: Route[] = [
     name: 'About',
     activeLabel: 'about',
     url: '/',
+  },
+  {
+    name: 'Blog',
+    activeLabel: 'blog',
+    url: '/blog',
   },
   {
     name: 'Contact',

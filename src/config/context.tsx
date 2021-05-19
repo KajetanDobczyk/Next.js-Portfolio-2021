@@ -20,9 +20,8 @@ type Dispatch = (action: Action) => void
 
 type ContextProviderProps = { children: React.ReactNode }
 
-export const StateContext = createContext<
-  { state: State; dispatch: Dispatch } | undefined
->(undefined)
+export const StateContext =
+  createContext<{ state: State; dispatch: Dispatch } | undefined>(undefined)
 
 function reducer(state: State, action: Action) {
   switch (action.type) {
