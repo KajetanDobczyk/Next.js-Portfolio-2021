@@ -46,7 +46,7 @@ export const TestimonialsSliderWrapper = styled.div`
   height: 100%;
   overflow: hidden;
 
-  ${theme.media.xl} {
+  ${theme.media.xxl} {
     width: calc(70% + ${sliderOffset});
     left: 30%;
   }
@@ -160,8 +160,9 @@ export const Slide = styled.div`
 `
 
 export const SlideContent = styled.p`
-  line-height: 2;
+  line-height: 1.5;
   font-size: ${theme.font.size.sm};
+  margin-bottom: 20px;
 `
 
 export const Author = styled.div`
@@ -183,10 +184,9 @@ export const AuthorName = styled.h4`
 export const AuthorPosition = styled.a`
   display: block;
   font-size: ${theme.font.size.xs};
+  color: ${theme.color.grey[600]};
 
-  &:hover {
-    text-decoration: underline;
-  }
+  ${theme.mixins.textContentLink(false, theme.color.grey[600])}
 `
 
 export const QuoteIcon = styled.img`

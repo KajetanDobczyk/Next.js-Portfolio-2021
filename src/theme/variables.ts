@@ -5,17 +5,20 @@ export const color: Color = {
   white: '#ffffff',
   grey: {
     100: '#222222',
+    300: '#555555',
     600: '#999999',
     800: '#d8d8d8',
     900: '#f5f5f5',
   },
   text: '#222222',
   main: '#d0021b',
+  blue: '#021bd0',
+  green: '#1bd002',
 }
 
 export const font: Font = {
   size: {
-    xxs: '0.6875rem',
+    xxs: '0.6rem',
     xs: '0.75rem',
     sm: '0.875rem',
     base: '1rem',
@@ -33,8 +36,7 @@ export const font: Font = {
     black: 900,
   },
   family: {
-    sans:
-      'Alegreya Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+    sans: 'Alegreya Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
     serif: 'Alegreya',
   },
 }

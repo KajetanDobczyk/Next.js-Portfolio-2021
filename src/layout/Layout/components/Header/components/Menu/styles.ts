@@ -26,7 +26,7 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
   }
 
   a {
-    ${theme.mixins.textContentLink}
+    ${theme.mixins.textContentLink()}
     font-family: ${theme.font.family.sans};
     padding: 5px 10px;
     white-space: nowrap;

@@ -16,7 +16,7 @@ export const Content = styled.div`
   align-items: center;
 
   a {
-    ${theme.mixins.textContentLink}
+    ${theme.mixins.textContentLink()}
     color: ${theme.color.main};
   }
 `

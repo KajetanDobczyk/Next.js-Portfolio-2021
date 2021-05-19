@@ -4,6 +4,8 @@ export type Color = {
   grey: Record<number, string>
   text: string
   main: string
+  blue: string
+  green: string
 }
 
 export type FontSize =

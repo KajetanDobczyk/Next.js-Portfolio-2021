@@ -16,7 +16,9 @@ const Testimonials = () => (
               <div>
                 <S.AuthorName>{testimonial.author}</S.AuthorName>
                 <S.AuthorPosition href={testimonial.link} target="_blank">
-                  {testimonial.position}
+                  <span data-content={testimonial.position}>
+                    {testimonial.position}
+                  </span>
                 </S.AuthorPosition>
               </div>
             </S.Author>

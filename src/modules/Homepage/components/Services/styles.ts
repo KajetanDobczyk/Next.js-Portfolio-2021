@@ -114,13 +114,13 @@ export const Description = styled.div`
   }
 `
 
-export const ServiceTitle = styled.h4`
+export const ServiceTitle = styled.h3`
   position: relative;
   margin-bottom: 30px;
   padding-left: 30px;
 
   ${theme.media.xl} {
-    height: 50px;
+    height: 60px;
     margin-bottom: 10px;
   }
   ${theme.media.md} {
@@ -130,12 +130,12 @@ export const ServiceTitle = styled.h4`
 
   &:before {
     position: absolute;
-    top: 9px;
+    top: 13px;
     left: -30px;
     content: '';
     width: 45px;
     height: 3px;
-    background-color: ${theme.color.black};
+    background-color: ${theme.color.main};
 
     ${theme.media.lg} {
       width: 30px;

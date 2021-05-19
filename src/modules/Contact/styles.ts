@@ -78,7 +78,7 @@ export const ContactDetails = styled.div`
 
   a {
     display: block;
-    ${theme.mixins.textContentLink}
+    ${theme.mixins.textContentLink(false, theme.color.white)}
     color: ${theme.color.white};
     line-height: 2;
   }

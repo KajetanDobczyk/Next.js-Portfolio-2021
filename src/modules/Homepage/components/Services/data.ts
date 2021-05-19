@@ -12,7 +12,7 @@ export const services = [
     image: '/images/best-practices.svg',
   },
   {
-    title: 'Proactiveness & effortless communication',
+    title: 'Proactive communication',
     content:
       'Highly proactive and goal-driven approach, pragmatic interpersonal communication – based on experience, reason, and intuition',
     image: '/images/brainstorming.svg',
