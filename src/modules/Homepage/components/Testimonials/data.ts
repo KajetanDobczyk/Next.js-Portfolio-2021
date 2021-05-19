@@ -3,6 +3,14 @@ import theme from 'src/theme'
 
 export const testimonials = [
   {
+    image: '/images/clients/marcin.jpeg',
+    author: 'Marcin Strawczyński',
+    position: 'Head of Digital Products Development at Siemens',
+    link: 'https://new.siemens.com/global/en/products/financing.html/',
+    content:
+      'Kajetan was the lead front-end developer for the SimplyLease / SimplyLoan platform, which is the leading online leasing platform in Poland. (...) During his tenure, he played an instrumental role in the development of new features and refactoring of existing ones. (...)  I recommend Kajetan as lead / senior front-end developer for any product team that wants to delight its customers!',
+  },
+  {
     image: '/images/clients/erica.jpeg',
     author: 'Erica T. Johnson',
     position: 'CEO at Modern Health',

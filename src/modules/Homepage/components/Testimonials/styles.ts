@@ -9,6 +9,7 @@ export const TestimonialsWrapper = styled.div`
   position: relative;
   background-color: ${theme.color.grey[100]};
   padding: 180px 0;
+  overflow: hidden;
 
   ${theme.media.lg} {
     padding: 150px 0 0;
