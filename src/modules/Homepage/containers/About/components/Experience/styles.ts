@@ -51,6 +51,7 @@ export const ExperienceSliderWrapper = styled.div`
 export const Slider = styled(SlickSlider)`
   height: 100%;
   padding: 0 20px;
+  ${theme.mixins.content}
 
   .slick-list {
     height: 100% !important;

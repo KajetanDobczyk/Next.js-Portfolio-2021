@@ -4,27 +4,38 @@ import { SocialIcon as ReactSocialIcon } from 'react-social-icons'
 import theme from 'src/theme'
 
 export const ContactWrapper = styled.div`
-  padding: 150px 0;
-
-  ${theme.media.md} {
-    padding: 100px 0;
-  }
+  padding: 150px 0 0;
 `
 
 export const Content = styled.div`
   position: relative;
   z-index: 1;
   ${theme.mixins.content}
-  min-height: 580px;
+  align-items: flex-start;
+  min-height: 500px;
+
+  ${theme.media.md} {
+    align-items: center;
+    padding-bottom: 50px;
+    min-height: 0;
+  }
+
+  a {
+    display: inline-block;
+    ${theme.mixins.textContentLink(false)}
+    line-height: 2;
+  }
 `
 
 export const Title = styled.h2`
   position: relative;
   color: ${theme.color.main};
-  width: 300px;
-  margin: 0;
+  margin: 0 0 20px;
   z-index: 1;
 
+  ${theme.media.lg} {
+    max-width: 400px;
+  }
   ${theme.media.md} {
     text-align: center;
     width: 100%;
@@ -33,66 +44,37 @@ export const Title = styled.h2`
 
 export const PhotoWrapper = styled.div`
   position: absolute;
-  top: 100px;
-  left: 100px;
-  width: 570px;
-  height: 480px;
+  bottom: 0;
+  right: 0;
+  width: 600px;
+  height: 600px;
   background-color: ${theme.color.grey[800]};
   z-index: 0;
+  opacity: 0.2;
 
+  ${theme.media.lg} {
+    width: 500px;
+    height: 500px;
+  }
   ${theme.media.md} {
-    position: relative;
-    top: 0;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
     left: 0;
     margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
-    height: 300px;
-    margin-top: 50px;
+    width: 400px;
+    height: 400px;
+    z-index: -1;
   }
-`
-
-export const ContactDetails = styled.div`
-  position: absolute;
-  top: 200px;
-  right: 200px;
-  width: 385px;
-  padding: 50px;
-  background-color: ${theme.color.grey[100]};
-
-  ${theme.media.xl} {
-    top: 350px;
-  }
-  ${theme.media.lg} {
-    top: 450px;
-    right: 70px;
-  }
-  ${theme.media.md} {
-    position: relative;
-    top: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 400px;
-  }
-
-  a {
-    display: block;
-    ${theme.mixins.textContentLink(false, theme.color.white)}
-    color: ${theme.color.white};
-    line-height: 2;
-  }
-`
-
-export const DetailsHeading = styled.h4`
-  color: ${theme.color.white};
-  margin-bottom: 20px;
 `
 
 export const SocialLinks = styled.div`
-  position: absolute;
-  bottom: -50px;
-  right: 20px;
+  display: flex;
+  margin-top: 20px;
+
+  ${theme.media.md} {
+    margin-bottom: 50px;
+  }
 `
 
 export const SocialIcon = styled(ReactSocialIcon)`

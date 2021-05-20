@@ -215,19 +215,11 @@ export const experiences: Experience[] = [
 
 export const sliderSettings: Settings = {
   infinite: false,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   adaptiveHeight: true,
   initialSlide: experiences.length - 4,
   responsive: [
-    {
-      breakpoint: theme.breakpoints.xxl,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: experiences.length - 3,
-      },
-    },
     {
       breakpoint: theme.breakpoints.lg,
       settings: {

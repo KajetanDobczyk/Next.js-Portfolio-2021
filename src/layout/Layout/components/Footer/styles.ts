@@ -4,9 +4,10 @@ import theme from 'src/theme'
 
 export const FooterWrapper = styled.div`
   width: 100%;
-  background-color: ${theme.color.grey[100]};
-  color: ${theme.color.white};
-  padding: 50px 0;
+  background-color: ${theme.color.white};
+  color: ${theme.color.text};
+  padding: 40px 0;
+  border-top: 1px solid ${theme.color.grey[800]};
 `
 
 export const Content = styled.div`

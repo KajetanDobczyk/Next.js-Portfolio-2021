@@ -3,6 +3,11 @@ import * as S from './styles'
 
 const Intro = () => (
   <S.IntroWrapper>
+    <S.IntroBackground
+      src="/images/intro-bg.jpg"
+      alt="Kajetan Dobczyk"
+      layout="fill"
+    />
     <S.Content>
       <S.Title>
         <span>U</span>ser <span>I</span>nterfaces coded right<span>.</span>

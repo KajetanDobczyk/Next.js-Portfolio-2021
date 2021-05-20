@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { keyframes } from '@emotion/react'
 import styled from '@emotion/styled'
 
@@ -18,6 +19,11 @@ export const IntroWrapper = styled.div`
     padding: 30px 0 80px;
     height: auto;
   }
+`
+
+export const IntroBackground = styled(Image)`
+  opacity: 0.1;
+  object-fit: cover;
 `
 
 export const Content = styled.div`
