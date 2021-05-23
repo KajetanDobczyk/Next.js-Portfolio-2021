@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+import SectionTitle from 'src/components/SectionTitle'
 import theme from 'src/theme'
 
 import * as S from './styles'
@@ -12,9 +13,11 @@ const socialLinks = [
 const Contact = () => (
   <S.ContactWrapper>
     <S.Content>
-      <S.Title>
-        Let's <span>s</span>tart working together<span>!</span>
-      </S.Title>
+      <S.TitleWrapper>
+        <SectionTitle>
+          <span>L</span>et's start working <span>t</span>ogether<span>!</span>
+        </SectionTitle>
+      </S.TitleWrapper>
       <S.Link href="mailto:kajetan@dobczyk.com">
         <span data-content="kajetan@dobczyk.com">kajetan@dobczyk.com</span>
       </S.Link>
@@ -33,7 +36,7 @@ const Contact = () => (
       </S.SocialLinks>
       <S.PhotoWrapper>
         <Image
-          src="/images/profile.jpg"
+          src="/images/profile-2.jpg"
           alt="Kajetan Dobczyk"
           layout="fill"
           objectFit="cover"

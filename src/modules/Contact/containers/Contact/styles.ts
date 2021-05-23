@@ -16,7 +16,7 @@ export const Content = styled.div`
 
   ${theme.media.md} {
     align-items: center;
-    padding-bottom: 50px;
+    padding-bottom: 0;
     min-height: 0;
   }
 
@@ -26,15 +26,13 @@ export const Content = styled.div`
   }
 `
 
-export const Title = styled.h2`
+export const TitleWrapper = styled.div`
   position: relative;
-  margin: 0 0 20px;
   z-index: 1;
 
-  span {
-    color: ${theme.color.main};
+  ${theme.media.xl} {
+    max-width: 500px;
   }
-
   ${theme.media.lg} {
     max-width: 400px;
   }
@@ -58,21 +56,14 @@ export const PhotoWrapper = styled.div`
   height: 600px;
   background-color: ${theme.color.grey[800]};
   z-index: 0;
-  opacity: 0.1;
+  opacity: 1;
 
   ${theme.media.lg} {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
   }
   ${theme.media.md} {
-    opacity: 0.1;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 400px;
-    height: 400px;
-    z-index: -1;
+    position: relative;
   }
 `
 

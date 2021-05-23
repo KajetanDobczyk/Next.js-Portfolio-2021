@@ -14,7 +14,7 @@ module.exports = (phase) => {
       API_URL: apiUrls[phase],
     },
     images: {
-      domains: ['assets.vercel.com', 'localhost'],
+      domains: ['assets.vercel.com', 'localhost', 'herokuapp.com'],
     },
   }
 }

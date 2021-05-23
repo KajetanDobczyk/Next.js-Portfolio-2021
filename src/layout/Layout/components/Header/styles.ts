@@ -10,13 +10,13 @@ export const StyledSticky = styled(Sticky)`
   }
   &.nav-sticky .sticky-inner-wrapper {
     background-color: ${theme.color.white};
+    border-bottom: 1px solid ${theme.color.grey[900]};
   }
 `
 
 export const HeaderMainWrapper = styled.header`
   position: relative;
   z-index: 99999;
-  border-bottom: 1px solid ${theme.color.grey[900]};
   transition: 0.25s ease-in-out;
 `
 

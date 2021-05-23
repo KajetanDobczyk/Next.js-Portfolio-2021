@@ -5,7 +5,7 @@ import * as S from './styles'
 const Intro = () => (
   <S.IntroWrapper>
     <S.IntroBackground
-      src="/images/intro-bg.jpg"
+      src="/images/intro-bg-3.jpg"
       alt="Kajetan Dobczyk"
       layout="fill"
       objectFit="cover"

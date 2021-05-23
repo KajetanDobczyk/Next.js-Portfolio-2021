@@ -87,7 +87,7 @@ export const InfoPoint = styled.div`
   }
 
   &:first-of-type {
-    margin-right: 130px;
+    margin-right: 100px;
 
     ${theme.media.lg} {
       margin-right: 70px;

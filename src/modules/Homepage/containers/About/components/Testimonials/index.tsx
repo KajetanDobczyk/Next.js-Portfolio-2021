@@ -1,10 +1,13 @@
+import SectionTitle from 'src/components/SectionTitle'
 import { sliderSettings, testimonials } from './data'
 import * as S from './styles'
 
 const Testimonials = () => (
   <S.TestimonialsWrapper>
     <S.Content>
-      <S.Title>What clients say</S.Title>
+      <SectionTitle Component="h3">
+        What <span>c</span>lients say
+      </SectionTitle>
     </S.Content>
     <S.TestimonialsSliderWrapper>
       <S.Slider {...sliderSettings}>

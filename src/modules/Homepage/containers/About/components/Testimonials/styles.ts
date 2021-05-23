@@ -24,6 +24,7 @@ export const TestimonialsWrapper = styled.div`
 
 export const Content = styled.div`
   ${theme.mixins.content}
+  color: ${theme.color.white};
 
   ${theme.media.lg} {
     align-items: center;
