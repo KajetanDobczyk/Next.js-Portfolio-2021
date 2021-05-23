@@ -8,6 +8,10 @@ export const FooterWrapper = styled.div`
   color: ${theme.color.text};
   padding: 40px 0;
   border-top: 1px solid ${theme.color.grey[800]};
+
+  ${theme.media.sm} {
+    padding: 20px 0;
+  }
 `
 
 export const Content = styled.div`

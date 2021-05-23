@@ -16,10 +16,10 @@ const Intro = () => (
       </SectionTitle>
       <S.Info>
         {infoPoints.map((infoPoint) => (
-          <div key={infoPoint.header}>
+          <S.InfoPoint key={infoPoint.header}>
             <h3>{infoPoint.header}</h3>
             <p>{infoPoint.description}</p>
-          </div>
+          </S.InfoPoint>
         ))}
       </S.Info>
     </S.Content>

@@ -25,15 +25,6 @@ export const Content = styled.div`
   }
 `
 
-export const Title = styled.h2`
-  margin-bottom: 50px;
-
-  ${theme.media.lg} {
-    width: auto;
-    margin-bottom: 50px;
-  }
-`
-
 export const ExperienceSliderWrapper = styled.div`
   position: relative;
 

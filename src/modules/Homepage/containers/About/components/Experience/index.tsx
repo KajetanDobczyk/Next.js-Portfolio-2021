@@ -8,7 +8,7 @@ const Experience = () => (
   <S.ExperienceWrapper>
     <S.Content>
       <SectionTitle>
-        My <span>j</span>ourney so <span>f</span>ar
+        My <span>j</span>ourney so far
       </SectionTitle>
     </S.Content>
     <S.ExperienceSliderWrapper>

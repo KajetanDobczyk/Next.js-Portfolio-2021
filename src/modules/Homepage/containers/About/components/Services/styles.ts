@@ -19,20 +19,13 @@ export const Content = styled.div`
   ${theme.mixins.content}
 `
 
-export const Title = styled.h2`
-  margin-bottom: 3rem;
-
-  ${theme.media.lg} {
-    text-align: center;
-  }
-`
-
 export const Services = styled.div`
   display: flex;
   justify-content: space-between;
 
   ${theme.media.md} {
     flex-direction: column;
+    margin-top: 40px;
   }
 `
 
@@ -57,7 +50,7 @@ export const Service = styled.div`
 
     ${theme.media.md} {
       margin-right: 0;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
     }
   }
 `
@@ -149,11 +142,11 @@ export const ServiceTitle = styled.h3`
 `
 
 export const ServiceDescription = styled.p`
-  font-size: ${theme.font.size.sm};
   color: ${theme.color.grey[600]};
   padding-left: 30px;
 
   ${theme.media.md} {
     padding-left: 0;
+    color: ${theme.color.text};
   }
 `

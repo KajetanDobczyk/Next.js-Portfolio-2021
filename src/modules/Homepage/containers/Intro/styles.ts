@@ -53,52 +53,59 @@ export const Info = styled.div`
     margin-left: 0;
   }
   ${theme.media.md} {
+    flex-direction: column;
     justify-content: flex-start;
   }
+`
+
+export const InfoPoint = styled.div`
+  position: relative;
+
+  ${theme.media.md} {
+    max-width: 450px;
+  }
   ${theme.media.sm} {
-    flex-direction: column;
+    max-width: 350px;
   }
 
-  > div {
-    position: relative;
+  &:before {
+    position: absolute;
+    top: 20px;
+    left: -200px;
+    content: '';
+    width: 120px;
+    height: 3px;
+    background-color: ${theme.color.black};
 
-    ${theme.media.sm} {
-      max-width: 350px;
+    ${theme.media.xl} {
+      left: 0;
+      width: 50px;
     }
+    ${theme.media.md} {
+      top: 17px;
+    }
+  }
 
+  &:first-of-type {
+    margin-right: 130px;
+
+    ${theme.media.lg} {
+      margin-right: 70px;
+    }
+    ${theme.media.md} {
+      margin-bottom: 30px;
+      margin-right: 50px;
+    }
+    ${theme.media.sm} {
+      margin-right: 0;
+    }
+  }
+  &:last-of-type {
     &:before {
-      position: absolute;
-      top: 20px;
-      left: -200px;
-      content: '';
-      width: 120px;
-      height: 3px;
-      background-color: ${theme.color.black};
+      display: none;
 
       ${theme.media.xl} {
-        left: 0;
-        width: 50px;
-      }
-    }
-
-    &:first-of-type {
-      margin-right: 130px;
-
-      ${theme.media.md} {
-        margin-bottom: 30px;
-        margin-right: 50px;
-      }
-      ${theme.media.sm} {
-        margin-right: 0;
-      }
-    }
-    &:last-of-type {
-      &:before {
-        display: none;
-
-        ${theme.media.xl} {
-          display: block;
-        }
+        display: block;
       }
     }
   }
@@ -106,6 +113,9 @@ export const Info = styled.div`
   h3 {
     ${theme.media.xl} {
       margin-left: 70px;
+    }
+    ${theme.media.md} {
+      margin-bottom: 10px;
     }
   }
 

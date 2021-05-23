@@ -13,7 +13,7 @@ const Contact = () => (
   <S.ContactWrapper>
     <S.Content>
       <S.Title>
-        Let's <span>s</span>tart working <span>t</span>ogether<span>!</span>
+        Let's <span>s</span>tart working together<span>!</span>
       </S.Title>
       <S.Link href="mailto:kajetan@dobczyk.com">
         <span data-content="kajetan@dobczyk.com">kajetan@dobczyk.com</span>

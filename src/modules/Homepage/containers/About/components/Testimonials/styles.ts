@@ -8,9 +8,12 @@ const sliderOffset = '200px'
 export const TestimonialsWrapper = styled.div`
   position: relative;
   background-color: ${theme.color.grey[100]};
-  padding: 180px 0;
+  padding: 250px 0;
   overflow: hidden;
 
+  ${theme.media.xxl} {
+    padding: 280px 0;
+  }
   ${theme.media.lg} {
     padding: 150px 0 0;
   }
@@ -60,11 +63,14 @@ export const TestimonialsSliderWrapper = styled.div`
 export const Slider = styled(SlickSlider)`
   height: 100%;
 
-  ${theme.media.lg} {
+  ${theme.media.md} {
     height: 500px;
   }
-  ${theme.media.md} {
+  ${theme.media.sm} {
     height: 400px;
+  }
+  ${theme.media.xs} {
+    height: 500px;
   }
 
   .slick-list {
@@ -160,7 +166,6 @@ export const Slide = styled.div`
 `
 
 export const SlideContent = styled.p`
-  font-size: ${theme.font.size.sm};
   margin-bottom: 20px;
 `
 

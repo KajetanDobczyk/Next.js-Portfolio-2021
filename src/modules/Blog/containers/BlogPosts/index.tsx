@@ -13,7 +13,7 @@ const BlogPosts: React.FC<Props> = ({ posts }) => (
         <BlogPostTile post={post} key={post.id} />
       ))}
     </S.PostsWrapper>
-    <S.Sidebar>Sidebar</S.Sidebar>
+    <S.Sidebar></S.Sidebar>
   </S.Content>
 )
 

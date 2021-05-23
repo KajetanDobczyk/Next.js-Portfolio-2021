@@ -1,6 +1,12 @@
+import theme from '.'
+
 export const typography = `
   html {
     font-size: 100%;
+
+    ${theme.media.md} {
+      font-size: 14px;
+    }
   }
 
   body {
@@ -12,7 +18,7 @@ export const typography = `
   }
   
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; 
     font-weight: 200;
   }
 
