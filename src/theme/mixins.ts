@@ -9,6 +9,7 @@ const mixins = {
         padding: 0 20px;
     `,
   textContentLink: (underlined?: boolean, underlineColor?: string) => `
+  display: inline-block;
         cursor: pointer;
         position: relative;
 

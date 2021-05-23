@@ -23,7 +23,6 @@ export const IntroWrapper = styled.div`
 
 export const IntroBackground = styled(Image)`
   opacity: 0.1;
-  object-fit: cover;
 `
 
 export const Content = styled.div`
@@ -124,7 +123,6 @@ export const Info = styled.div`
 
   p {
     color: ${theme.color.grey[600]};
-    line-height: 2;
   }
 `
 

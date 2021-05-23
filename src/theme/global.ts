@@ -18,11 +18,15 @@ const global = `
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   h4 {
     font-size: 1.125rem;
+  }
+
+  p {
+    line-height: 1.5;
   }
   
   @media screen and (max-width: 1200px) {

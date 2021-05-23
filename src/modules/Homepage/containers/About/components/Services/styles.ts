@@ -151,7 +151,6 @@ export const ServiceTitle = styled.h3`
 export const ServiceDescription = styled.p`
   font-size: ${theme.font.size.sm};
   color: ${theme.color.grey[600]};
-  line-height: 2;
   padding-left: 30px;
 
   ${theme.media.md} {

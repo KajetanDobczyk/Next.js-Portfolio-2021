@@ -23,7 +23,6 @@ export const Content = styled.div`
   a {
     display: inline-block;
     ${theme.mixins.textContentLink(false)}
-    line-height: 2;
   }
 `
 
@@ -50,7 +49,7 @@ export const PhotoWrapper = styled.div`
   height: 600px;
   background-color: ${theme.color.grey[800]};
   z-index: 0;
-  opacity: 0.2;
+  opacity: 0.1;
 
   ${theme.media.lg} {
     width: 500px;

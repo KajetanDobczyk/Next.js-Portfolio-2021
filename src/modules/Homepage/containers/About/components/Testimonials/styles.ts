@@ -160,7 +160,6 @@ export const Slide = styled.div`
 `
 
 export const SlideContent = styled.p`
-  line-height: 1.5;
   font-size: ${theme.font.size.sm};
   margin-bottom: 20px;
 `

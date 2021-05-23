@@ -7,6 +7,7 @@ const Intro = () => (
       src="/images/intro-bg.jpg"
       alt="Kajetan Dobczyk"
       layout="fill"
+      objectFit="cover"
     />
     <S.Content>
       <S.Title>

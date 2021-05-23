@@ -31,7 +31,6 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
     padding: 5px 10px;
     white-space: nowrap;
     font-size: 15px;
-    line-height: 1;
     font-weight: 400;
 
     > span {

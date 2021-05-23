@@ -16,6 +16,7 @@ export const StyledSticky = styled(Sticky)`
 export const HeaderMainWrapper = styled.header`
   position: relative;
   z-index: 99999;
+  border-bottom: 1px solid ${theme.color.grey[900]};
   transition: 0.25s ease-in-out;
 `
 
@@ -71,6 +72,7 @@ export const Logo = styled.div`
 export const MenuWrapper = styled.div`
   display: flex;
   flex-grow: 1;
+
   ${theme.media.lg} {
     display: none;
   }
