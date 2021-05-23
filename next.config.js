@@ -6,7 +6,7 @@ const {
 module.exports = (phase) => {
   const apiUrls = {
     [PHASE_DEVELOPMENT_SERVER]: 'http://localhost:1337',
-    [PHASE_PRODUCTION_BUILD]: 'TODO_HOST_STRAPI_ON_HEROKU',
+    [PHASE_PRODUCTION_BUILD]: 'https://kajetan-dobczyk-cms.herokuapp.com',
   }
 
   return {
