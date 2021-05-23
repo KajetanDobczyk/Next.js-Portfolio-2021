@@ -1,10 +1,14 @@
+import SectionTitle from 'src/components/SectionTitle'
+
 import { services } from './data'
 import * as S from './styles'
 
 const Services = () => (
   <S.ServicesWrapper>
     <S.Content>
-      <S.Title>My services</S.Title>
+      <SectionTitle>
+        My <span>s</span>ervices
+      </SectionTitle>
       <S.Services>
         {services.map((service) => (
           <S.Service key={service.title}>

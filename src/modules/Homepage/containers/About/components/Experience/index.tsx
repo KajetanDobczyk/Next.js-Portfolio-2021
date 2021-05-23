@@ -1,16 +1,20 @@
+import SectionTitle from 'src/components/SectionTitle'
 import theme from 'src/theme'
+
 import { experiences, sliderSettings } from './data'
 import * as S from './styles'
 
 const Experience = () => (
   <S.ExperienceWrapper>
     <S.Content>
-      <S.Title>My journey so far</S.Title>
+      <SectionTitle>
+        My <span>j</span>ourney so <span>f</span>ar
+      </SectionTitle>
     </S.Content>
     <S.ExperienceSliderWrapper>
       <S.Slider {...sliderSettings}>
         {experiences.reverse().map((experience) => (
-          <S.Slide key={experience.link}>
+          <S.Slide key={experience.title}>
             <S.ExperienceLogo src={experience.logo} />
             <S.ExperienceTitle>
               {experience.link ? (

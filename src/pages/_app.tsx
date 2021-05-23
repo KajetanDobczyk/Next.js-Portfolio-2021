@@ -3,7 +3,6 @@ import { Global, css } from '@emotion/react'
 
 import { ContextProvider } from 'src/config/context'
 import globalStyles from 'src/theme/global'
-import 'src/theme/reset.css'
 
 const App = ({ Component, pageProps }: AppProps) => (
   <ContextProvider>

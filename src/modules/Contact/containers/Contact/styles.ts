@@ -22,15 +22,18 @@ export const Content = styled.div`
 
   a {
     display: inline-block;
-    ${theme.mixins.textContentLink(false)}
+    ${theme.mixins.textContentLink(true)}
   }
 `
 
 export const Title = styled.h2`
   position: relative;
-  color: ${theme.color.main};
   margin: 0 0 20px;
   z-index: 1;
+
+  span {
+    color: ${theme.color.main};
+  }
 
   ${theme.media.lg} {
     max-width: 400px;
@@ -38,6 +41,12 @@ export const Title = styled.h2`
   ${theme.media.md} {
     text-align: center;
     width: 100%;
+  }
+`
+
+export const Link = styled.a`
+  &:not(:last-of-type) {
+    margin-bottom: 5px;
   }
 `
 

@@ -127,7 +127,7 @@ export const ExperienceLogo = styled.img`
   margin-left: -5px;
 `
 
-export const ExperienceTitle = styled.h3`
+export const ExperienceTitle = styled.h4`
   margin: 0;
 
   a {
@@ -137,15 +137,13 @@ export const ExperienceTitle = styled.h3`
 
 export const ExperienceDate = styled.span`
   display: block;
-  margin: -3px 0 20px;
+  margin-bottom: 1rem;
   font-size: ${theme.font.size.sm};
 `
 
 export const ExperienceContent = styled.p`
-  margin-bottom: 20px;
-
   a {
-    ${theme.mixins.textContentLink()}
+    ${theme.mixins.textContentLink(true, theme.color.main)}
   }
 `
 
@@ -153,6 +151,7 @@ export const ExperienceTag = styled.span<{ color: string }>(
   ({ color }) => `
   display: inline-block;
   font-size: ${theme.font.size.xxs};
+  font-weight: ${theme.font.weight.normal};
   text-transform: uppercase;
   font-family: ${theme.font.family.sans};
   color: ${color};

@@ -16,8 +16,12 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  p {
+    margin-bottom: 0;
+  }
+
   a {
-    ${theme.mixins.textContentLink()}
+    ${theme.mixins.textContentLink(true)}
     color: ${theme.color.main};
   }
 `

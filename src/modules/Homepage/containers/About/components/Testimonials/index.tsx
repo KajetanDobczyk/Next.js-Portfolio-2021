@@ -4,7 +4,7 @@ import * as S from './styles'
 const Testimonials = () => (
   <S.TestimonialsWrapper>
     <S.Content>
-      <S.Title>What clients say about me</S.Title>
+      <S.Title>What clients say</S.Title>
     </S.Content>
     <S.TestimonialsSliderWrapper>
       <S.Slider {...sliderSettings}>

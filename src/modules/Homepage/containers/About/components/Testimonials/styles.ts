@@ -27,7 +27,7 @@ export const Content = styled.div`
   }
 `
 
-export const Title = styled.h2`
+export const Title = styled.h3`
   width: 300px;
   margin: 0;
   color: ${theme.color.white};
@@ -177,15 +177,15 @@ export const AuthorImage = styled.img`
 `
 
 export const AuthorName = styled.h4`
-  margin: 3px 0 5px;
+  margin: 0;
 `
 
 export const AuthorPosition = styled.a`
   display: block;
   font-size: ${theme.font.size.xs};
-  color: ${theme.color.grey[600]};
+  color: ${theme.color.grey[800]};
 
-  ${theme.mixins.textContentLink(false, theme.color.grey[600])}
+  ${theme.mixins.textContentLink(true, theme.color.white)}
 `
 
 export const QuoteIcon = styled.img`

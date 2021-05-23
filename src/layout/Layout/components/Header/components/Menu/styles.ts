@@ -12,6 +12,7 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
   ({ isActive }) => `
   margin: 0 20px;
   list-style: none;
+  text-transform: uppercase;
 
   &:last-child {
     margin-right: 0;
@@ -26,7 +27,7 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
   }
 
   a {
-    ${theme.mixins.textContentLink()}
+    ${theme.mixins.textContentLink(false, theme.color.main)}
     font-family: ${theme.font.family.sans};
     padding: 5px 10px;
     white-space: nowrap;
@@ -35,6 +36,7 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
 
     > span {
       text-decoration: ${isActive ? 'underline' : 'none'};
+      text-decoration-color: ${theme.color.main};
     }
   }
 `,

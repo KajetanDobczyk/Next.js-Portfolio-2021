@@ -14,10 +14,6 @@ export const PostTitle = styled.h3`
   ${theme.mixins.textContentLink(true, theme.color.main)}
 `
 
-export const PostInfo = styled.span`
-  display: block;
-  margin-bottom: 10px;
-  font-size: ${theme.font.size.xs};
-  font-family: ${theme.font.family.sans};
-  color: ${theme.color.grey[600]};
+export const PostDescription = styled.p`
+  margin-bottom: 0;
 `

@@ -42,12 +42,6 @@ export const Content = styled.div`
   }
 `
 
-export const Title = styled.h1`
-  span {
-    color: ${theme.color.main};
-  }
-`
-
 export const Info = styled.div`
   display: flex;
   position: relative;
@@ -74,7 +68,7 @@ export const Info = styled.div`
 
     &:before {
       position: absolute;
-      top: 13px;
+      top: 20px;
       left: -200px;
       content: '';
       width: 120px;
@@ -110,14 +104,8 @@ export const Info = styled.div`
   }
 
   h3 {
-    margin-bottom: 40px;
-
     ${theme.media.xl} {
       margin-left: 70px;
-      margin-bottom: 20px;
-    }
-    ${theme.media.md} {
-      margin-bottom: 10px;
     }
   }
 

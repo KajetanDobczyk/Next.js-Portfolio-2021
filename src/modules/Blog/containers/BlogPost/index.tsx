@@ -14,8 +14,12 @@ type Props = {
 const BlogPost: React.FC<Props> = ({ post }) => (
   <S.BlogPostWrapper>
     <BlogPostImage image={post.image} />
-    <S.PostTitle>{post.title}</S.PostTitle>
-    <BlogPostInfo post={post} />
+    <S.PostDetails>
+      <S.PostTitle>
+        <span>{post.title}</span>
+      </S.PostTitle>
+      <BlogPostInfo post={post} />
+    </S.PostDetails>
     <S.PostContent>
       <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
     </S.PostContent>

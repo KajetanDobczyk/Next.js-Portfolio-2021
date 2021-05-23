@@ -1,3 +1,4 @@
+import SectionTitle from 'src/components/SectionTitle'
 import { infoPoints } from './data'
 import * as S from './styles'
 
@@ -10,9 +11,9 @@ const Intro = () => (
       objectFit="cover"
     />
     <S.Content>
-      <S.Title>
+      <SectionTitle Component="h1">
         <span>U</span>ser <span>I</span>nterfaces coded right<span>.</span>
-      </S.Title>
+      </SectionTitle>
       <S.Info>
         {infoPoints.map((infoPoint) => (
           <div key={infoPoint.header}>

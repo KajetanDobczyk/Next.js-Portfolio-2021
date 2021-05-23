@@ -22,7 +22,7 @@ const BlogPostTile: React.FC<Props> = ({ post }) => (
       </a>
     </Link>
     <BlogPostInfo post={post} />
-    <p>{post.description}</p>
+    <S.PostDescription>{post.description}</S.PostDescription>
   </S.BlogPostTileWrapper>
 )
 

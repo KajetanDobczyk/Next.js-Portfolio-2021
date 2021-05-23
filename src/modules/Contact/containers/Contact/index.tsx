@@ -12,13 +12,15 @@ const socialLinks = [
 const Contact = () => (
   <S.ContactWrapper>
     <S.Content>
-      <S.Title>Let's start working together!</S.Title>
-      <a href="mailto:kajetan@dobczyk.com">
+      <S.Title>
+        Let's <span>s</span>tart working <span>t</span>ogether<span>!</span>
+      </S.Title>
+      <S.Link href="mailto:kajetan@dobczyk.com">
         <span data-content="kajetan@dobczyk.com">kajetan@dobczyk.com</span>
-      </a>
-      <a href="tel:+48507097222">
+      </S.Link>
+      <S.Link href="tel:+48507097222">
         <span data-content="(+48) 507 097 222">(+48) 507 097 222</span>
-      </a>
+      </S.Link>
       <S.SocialLinks>
         {socialLinks.map((link) => (
           <S.SocialIcon

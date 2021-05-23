@@ -57,6 +57,7 @@ export const Logo = styled.div`
       font-size: ${theme.font.size.base};
       color: ${theme.color.grey[200]};
       margin-left: 15px;
+      margin-bottom: 0;
     }
     ${theme.media.sm} {
       img {

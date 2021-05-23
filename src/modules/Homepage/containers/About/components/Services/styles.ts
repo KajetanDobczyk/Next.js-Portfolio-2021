@@ -130,7 +130,7 @@ export const ServiceTitle = styled.h3`
 
   &:before {
     position: absolute;
-    top: 13px;
+    top: 19px;
     left: -30px;
     content: '';
     width: 45px;
