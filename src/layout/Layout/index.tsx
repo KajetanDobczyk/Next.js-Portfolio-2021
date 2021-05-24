@@ -7,6 +7,7 @@ import { useContext } from 'src/config/context'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
+import * as S from './styles'
 
 type Props = {
   activePage: ActivePage
@@ -21,15 +22,15 @@ const Layout: NextPage<Props> = ({ children, activePage, title }) => {
   }, [dispatch])
 
   return (
-    <>
+    <S.LayoutWrapper>
       <Head>
         <title>KD – {title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header />
-      {children}
+      <S.Main>{children}</S.Main>
       <Footer />
-    </>
+    </S.LayoutWrapper>
   )
 }
 

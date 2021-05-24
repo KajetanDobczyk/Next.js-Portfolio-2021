@@ -36,6 +36,10 @@ export const typography = `
   h1 {
     margin-top: 0;
     font-size: 5.653rem;
+
+    ${theme.media.sm} {
+      font-size: 5rem;
+    }
   }
   
   h2 {

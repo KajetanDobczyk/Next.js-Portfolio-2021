@@ -5,11 +5,14 @@ import theme from 'src/theme'
 
 export const ContactWrapper = styled.div`
   padding: 150px 0 0;
+  flex: 1;
+  display: flex;
 `
 
 export const Content = styled.div`
   position: relative;
   z-index: 1;
+  flex: 1;
   ${theme.mixins.content}
   align-items: flex-start;
   min-height: 500px;

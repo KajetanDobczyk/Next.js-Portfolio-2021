@@ -146,6 +146,10 @@ export const ScrollIcon = styled.div`
   border: 2px solid ${theme.color.text};
   border-radius: 25px;
 
+  ${theme.media.sm} {
+    display: none;
+  }
+
   &:before {
     content: '';
     position: absolute;
