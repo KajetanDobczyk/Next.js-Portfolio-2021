@@ -14,6 +14,10 @@ module.exports = (phase) => {
       API_URL: apiUrls[phase],
     },
     images: {
+      deviceSizes: [380, 576, 768, 992, 1200, 1440],
+      imageSizes: [16, 32, 48, 64, 96],
+      path: '/_next/image',
+      loader: 'default',
       domains: ['assets.vercel.com', 'localhost', 'herokuapp.com'],
     },
   }
