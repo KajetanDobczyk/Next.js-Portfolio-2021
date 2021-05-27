@@ -13,6 +13,7 @@ const BlogPostImage: React.FC<Props> = ({ image }) => (
     src={`${config.apiUrl}${image.url}`}
     width={image.width}
     height={image.height}
+    loader={({ src }) => src}
   />
 )
 

@@ -67,6 +67,8 @@ export const PhotoWrapper = styled.div`
   }
   ${theme.media.md} {
     position: relative;
+    width: 90vw;
+    height: 90vw;
   }
 `
 

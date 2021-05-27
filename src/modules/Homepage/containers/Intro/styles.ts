@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import theme from 'src/theme'
 
 export const IntroWrapper = styled.div`
+  position: relative;
   height: calc(100vh - ${theme.dimensions.header.big});
   display: flex;
   flex-direction: column;

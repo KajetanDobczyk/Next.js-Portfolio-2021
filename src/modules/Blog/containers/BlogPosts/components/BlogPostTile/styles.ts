@@ -5,6 +5,10 @@ import theme from 'src/theme'
 export const BlogPostTileWrapper = styled.div`
   &:not(:last-of-type) {
     margin-bottom: 100px;
+
+    ${theme.media.lg} {
+      margin-bottom: 50px;
+    }
   }
 `
 

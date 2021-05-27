@@ -113,11 +113,9 @@ export const ServiceTitle = styled.h3`
   padding-left: 30px;
 
   ${theme.media.xl} {
-    height: 60px;
     margin-bottom: 10px;
   }
   ${theme.media.md} {
-    height: auto;
     padding-left: 0;
   }
 
@@ -132,7 +130,6 @@ export const ServiceTitle = styled.h3`
 
     ${theme.media.lg} {
       width: 30px;
-      top: 8px;
       left: -10px;
     }
     ${theme.media.md} {
