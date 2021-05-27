@@ -10,9 +10,10 @@ type Props = {
 
 const BlogPostImage: React.FC<Props> = ({ image }) => (
   <Image
-    src={`${config.apiUrl}${image.url}`}
+    src={`${config.imagesPath}${image.url}`}
     width={image.width}
     height={image.height}
+    loader={({ src }) => src}
   />
 )
 
