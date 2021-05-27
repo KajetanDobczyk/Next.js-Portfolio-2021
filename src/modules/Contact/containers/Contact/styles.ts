@@ -1,5 +1,4 @@
 import styled from '@emotion/styled'
-import { SocialIcon as ReactSocialIcon } from 'react-social-icons'
 
 import theme from 'src/theme'
 
@@ -46,8 +45,10 @@ export const TitleWrapper = styled.div`
 `
 
 export const Link = styled.a`
-  &:not(:last-of-type) {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
   }
 `
 
@@ -69,23 +70,5 @@ export const PhotoWrapper = styled.div`
     position: relative;
     width: 90vw;
     height: 90vw;
-  }
-`
-
-export const SocialLinks = styled.div`
-  display: flex;
-  margin-top: 20px;
-
-  ${theme.media.md} {
-    margin-bottom: 50px;
-  }
-`
-
-export const SocialIcon = styled(ReactSocialIcon)`
-  max-width: 30px;
-  max-height: 30px;
-
-  &:not(:last-child) {
-    margin-right: 10px;
   }
 `

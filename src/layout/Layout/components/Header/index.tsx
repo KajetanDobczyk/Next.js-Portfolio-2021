@@ -19,7 +19,7 @@ const Header = () => (
                 width={50}
                 height={50}
               />
-              <h1>Kajetan Dobczyk</h1>
+              <h1>Kajetan (Kai) Dobczyk</h1>
             </a>
           </Link>
         </S.Logo>

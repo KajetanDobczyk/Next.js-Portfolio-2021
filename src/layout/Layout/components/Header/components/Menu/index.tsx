@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import routes from 'src/config/routes'
 import { useContext } from 'src/config/context'
+import SocialMediaButtons from 'src/components/SocialMediaButtons'
 
 import * as S from './styles'
 
@@ -27,6 +28,9 @@ const Menu: React.FC<Props> = ({ mobile }) => {
           </Link>
         </S.MenuItem>
       ))}
+      <S.SocialMediaButtonsWrapper>
+        <SocialMediaButtons />
+      </S.SocialMediaButtonsWrapper>
     </S.MenuWrapper>
   )
 }

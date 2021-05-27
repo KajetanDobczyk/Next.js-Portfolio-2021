@@ -20,15 +20,6 @@ export const experiences: Experience[] = [
     logo: '/images/experience/freelance.png',
   },
   {
-    date: '04.2020—now',
-    title: 'Scrabbler (own project)',
-    logo: '/images/experience/react.png',
-    content: <p>In progress...</p>,
-    frontend: ['React Native', 'hooks', 'TypeScript', 'Redux', 'Emotion'],
-    backend: ['Expo'],
-    other: ['UX design', 'UI design'],
-  },
-  {
     date: '06.2019—02.2021',
     title: 'Startup Development House',
     logo: '/images/experience/sdh.png',

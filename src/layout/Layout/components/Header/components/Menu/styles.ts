@@ -14,18 +14,6 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
   list-style: none;
   text-transform: uppercase;
 
-  &:last-child {
-    margin-right: 0;
-  }
-
-  ${theme.media.xl} {
-    margin: 0 10px;
-
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
   a {
     ${theme.mixins.textContentLink(false, theme.color.main)}
     font-family: ${theme.font.family.sans};
@@ -41,3 +29,11 @@ export const MenuItem = styled.li<{ isActive: boolean }>(
   }
 `,
 )
+
+export const SocialMediaButtonsWrapper = styled.div`
+  margin-left: 10px;
+
+  ${theme.media.lg} {
+    margin-left: 15px;
+  }
+`
