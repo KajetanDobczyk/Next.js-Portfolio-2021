@@ -12,11 +12,11 @@ const routes: Route[] = [
     activeLabel: 'about',
     url: '/',
   },
-  {
-    name: 'Blog',
-    activeLabel: 'blog',
-    url: '/blog',
-  },
+  // {
+  //   name: 'Blog',
+  //   activeLabel: 'blog',
+  //   url: '/blog',
+  // },
   {
     name: 'Contact',
     activeLabel: 'contact',
